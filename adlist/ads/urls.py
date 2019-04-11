@@ -14,9 +14,9 @@ urlpatterns = [
     #path('ad/<int:pk>/update',views.AdFormView.as_view(success_url=reverse_lazy('ads')), name='ad_update'),
 
     path('', views.AdListView.as_view(), name='menu_main'),
-    # path('page1', views.TheView.as_view(), name='menu_page1'),
-    # path('page2', views.TheView.as_view(), name='menu_page2'),
-    # path('page3', views.TheView.as_view(), name='menu_page3'),
+    path('page1', views.TheView.as_view(), name='menu_page1'),
+    path('page2', views.TheView.as_view(), name='menu_page2'),
+    path('page3', views.TheView.as_view(), name='menu_page3'),
     ##### picture
     path('ad_picture/<int:pk>', views.stream_file, name='ad_picture'),
 
