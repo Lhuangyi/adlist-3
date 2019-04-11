@@ -191,9 +191,9 @@ class DeleteFavoriteView(LoginRequiredMixin, View):
         return HttpResponse()
 
 
-# class TheView(View):
-#     def get(self, request):
-#         x = {'request': request}
-#         return render(request, 'main_menu.html', x)
-#
+class TheView(View):
+     def get(self, request):
+         x = {'request': request}
+         return render(request, 'main_menu.html', x)
+
 
